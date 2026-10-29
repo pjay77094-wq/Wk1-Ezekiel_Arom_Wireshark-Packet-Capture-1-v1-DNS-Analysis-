@@ -66,9 +66,6 @@ Close all browser windows. Open **Command Prompt** and run:
 ``` bat
 ipconfig /flushdns
 ```
-<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/FlushDns.png"
-     alt="Wireshark DNS response showing the website IP address"
-     width="800">
 
 
 ### 2. Start a Wireshark capture
@@ -77,6 +74,9 @@ ipconfig /flushdns
 2.  On the start screen, identify the active network interface---usually
     **Wi-Fi**.
 3.  Double-click the interface to begin capturing packets.
+   <img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/Wireshark-Dahboard.png"
+     alt="Wireshark DNS response showing the website IP address"
+     width="800">
 
 ### 3. Generate traffic to the target website
 
@@ -96,12 +96,9 @@ dns.qry.name == "networkwalks.com"
 
 Inspect the matching query and response:
 
--   In the **query** packet, the source is the client laptop and the
-    destination is the DNS resolver.
--   In the **response** packet, expand **Domain Name System** and then
-    **Answers**.
--   Read the returned **Address** field to identify the website IP
-    address.
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/  DnsCapture-Networkwalks.png"
+     alt="Wireshark DNS response showing the website IP address"
+     width="800">
 
 If no DNS packets appear, close the browser, flush the DNS cache again,
 and repeat the capture. Browser Secure DNS/DoH settings can affect
@@ -123,10 +120,7 @@ Extension: server_name**
 Look for the SNI value `networkwalks.com`. Inspect the packet's TCP
 details to identify the destination port.
 
-> **Note:** The source exercise notes that Chrome may use QUIC/HTTP/3 on
-> UDP port 443 for some connections. If the traffic is QUIC rather than
-> a TCP-based TLS handshake, packet details and filters may differ.
-> Confirm the protocol and transport fields in your own capture.
+
 
 ### 6. Inspect the Server Hello and TLS version
 
@@ -167,10 +161,9 @@ and traffic not needed to demonstrate the task.
 Show the filtered DNS query/response and expand **Domain Name System →
 Answers** so the returned address is visible.
 
-![DNS response showing the website IP](screenshots/dns-response.png)
-
-*Replace `screenshots/dns-response.png` with the path to your actual
-screenshot.*
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/  PacketCapturing_networkwalks.png"
+     alt="Wireshark DNS response showing the website IP address"
+     width="800">
 
 ### 2. TLS Client Hello showing SNI
 
