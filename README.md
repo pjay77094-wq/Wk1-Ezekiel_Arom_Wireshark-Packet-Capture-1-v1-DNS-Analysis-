@@ -125,7 +125,7 @@ Extension: server_name**
 Look for the SNI value `networkwalks.com`. Inspect the packet's TCP
 details to identify the destination port.
 
-<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/NetworksDesPortNo.png"
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/NetworksDesPortNo..png"
      alt="Wireshark DNS response showing the website IP address"
      width="800">
 
@@ -141,7 +141,7 @@ tls.handshake.type == 2
 Find the Server Hello associated with the target website and inspect the
 Protocol column and decoded TLS details. Record the negotiated TLS
 version indicated by the capture.
-<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/DnsCapture-Networkwalks.png"
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/60431d28853e1748a58a5a804f06a7a296223791/Wireshark%20Packet%20Capture%20v2.jpg"
      alt="Wireshark DNS response showing the website IP address"
      width="800">
 
