@@ -238,22 +238,6 @@ Show the relevant Server Hello and the decoded TLS version in Wireshark.
                                       addresses may change.
   -----------------------------------------------------------------------
 
-## Repository Structure
-
-A simple repository layout could be:
-
-``` text
-wireshark-packet-capture/
-├── README.md
-└── screenshots/
-    ├── dns-response.png
-    ├── tls-client-hello.png
-    └── tls-server-hello.png
-```
-
-Save the screenshots in the `screenshots/` directory and ensure the
-image filenames match the links in this README.
-
 ## Conclusion
 
 This exercise provided hands-on practice capturing Wi-Fi traffic and
