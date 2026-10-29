@@ -96,7 +96,7 @@ dns.qry.name == "networkwalks.com"
 
 Inspect the matching query and response:
 
-<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/  DnsCapture-Networkwalks.png"
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/DnsCapture-Networkwalks.png"
      alt="Wireshark DNS response showing the website IP address"
      width="800">
 
@@ -161,7 +161,7 @@ and traffic not needed to demonstrate the task.
 Show the filtered DNS query/response and expand **Domain Name System →
 Answers** so the returned address is visible.
 
-<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/  PacketCapturing_networkwalks.png"
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/WebsiteAddress.png"
      alt="Wireshark DNS response showing the website IP address"
      width="800">
 
@@ -170,19 +170,18 @@ Answers** so the returned address is visible.
 Show the Client Hello packet and expand the `server_name` extension so
 `networkwalks.com` is visible.
 
-![TLS Client Hello showing SNI](screenshots/tls-client-hello.png)
-
-*Replace `screenshots/tls-client-hello.png` with the path to your actual
-screenshot.*
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/ServerName_networkwalks.png"
+     alt="Wireshark DNS response showing the website IP address"
+     width="800">
 
 ### 3. Server Hello showing TLS version
 
 Show the relevant Server Hello and the decoded TLS version in Wireshark.
 
-![TLS Server Hello and version](screenshots/tls-server-hello.png)
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/ServerName_networkwalks.png"
+     alt="Wireshark DNS response showing the website IP address"
+     width="800">
 
-*Replace `screenshots/tls-server-hello.png` with the path to your actual
-screenshot.*
 
 ## Key Observations
 
