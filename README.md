@@ -66,7 +66,9 @@ Close all browser windows. Open **Command Prompt** and run:
 ``` bat
 ipconfig /flushdns
 ```
-
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/FlushDns.png"
+     alt="Wireshark DNS response showing the website IP address"
+     width="800">
 
 ### 2. Start a Wireshark capture
 
@@ -85,6 +87,9 @@ ipconfig /flushdns
 3.  Wait for the page to load fully.
 4.  Return to Wireshark and stop the capture using the red **Stop**
     button.
+    <img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/PacketCapturing_networkwalks.png"
+     alt="Wireshark DNS response showing the website IP address"
+     width="800">
 
 ### 4. Find the DNS query and response
 
@@ -120,6 +125,9 @@ Extension: server_name**
 Look for the SNI value `networkwalks.com`. Inspect the packet's TCP
 details to identify the destination port.
 
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/NetworksDesPortNo.png"
+     alt="Wireshark DNS response showing the website IP address"
+     width="800">
 
 
 ### 6. Inspect the Server Hello and TLS version
@@ -133,6 +141,9 @@ tls.handshake.type == 2
 Find the Server Hello associated with the target website and inspect the
 Protocol column and decoded TLS details. Record the negotiated TLS
 version indicated by the capture.
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/DnsCapture-Networkwalks.png"
+     alt="Wireshark DNS response showing the website IP address"
+     width="800">
 
 ## Results
 
@@ -169,16 +180,16 @@ Answers** so the returned address is visible.
 
 Show the Client Hello packet and expand the `server_name` extension so
 `networkwalks.com` is visible.
-
-<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/ServerName_networkwalks.png"
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/ServverName_networkwalks.png"
      alt="Wireshark DNS response showing the website IP address"
      width="800">
+
 
 ### 3. Server Hello showing TLS version
 
 Show the relevant Server Hello and the decoded TLS version in Wireshark.
 
-<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/ServerName_networkwalks.png"
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/5b358560b336d51354cf8bd75ca8a7d952c14839/Wireshark%20Packet%20Capture%201%20v1.jpg"
      alt="Wireshark DNS response showing the website IP address"
      width="800">
 
