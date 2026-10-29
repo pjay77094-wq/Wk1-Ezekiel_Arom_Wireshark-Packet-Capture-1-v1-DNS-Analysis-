@@ -66,10 +66,10 @@ Close all browser windows. Open **Command Prompt** and run:
 ``` bat
 ipconfig /flushdns
 ```
+<img src="screenshots/FlushDns.png"
+     alt="Wireshark DNS response showing the website IP address"
+     width="800">
 
-Confirm that Windows reports that the DNS Resolver Cache was
-successfully flushed. Clearing the cache helps encourage a fresh DNS
-lookup during the capture.
 
 ### 2. Start a Wireshark capture
 
