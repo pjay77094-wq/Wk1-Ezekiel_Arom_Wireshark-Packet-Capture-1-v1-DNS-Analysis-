@@ -66,7 +66,7 @@ Close all browser windows. Open **Command Prompt** and run:
 ``` bat
 ipconfig /flushdns
 ```
-<img src="screenshots/FlushDns.png"
+<img src="https://github.com/pjay77094-wq/Wk1-Ezekiel_Arom_Wireshark-Packet-Capture-1-v1-DNS-Analysis-/blob/f1508c53e40dd51a286499d13b906e76d54825ad/FlushDns.png"
      alt="Wireshark DNS response showing the website IP address"
      width="800">
 
